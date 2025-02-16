@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calendar">
+        <div class="header">
+            <button id="prevMonth">&lt;</button>
+            <span id="monthName"></span>
+            <button id="nextMonth">&gt;</button>
+        </div>
+        <div class="days-of-week">
+            <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+        </div>
+        <div id="calendarDays" class="days"></div>
+        <div id="eventModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <h3>Add/Edit Event</h3>
+                <input type="text" id="eventInput" placeholder="Enter event">
+                <button id="saveEvent">Save</button>
+                <button id="editEvent" style="display: none;">Edit</button>
+                <button id="deleteEvent" style="display: none;">Delete</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
